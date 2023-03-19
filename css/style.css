@@ -1,0 +1,456 @@
+/* Poppins Font */
+@font-face {
+  font-family: "Poppins";
+  src: url(../fonts/poppins.woff2);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Poppins", Arial;
+  font-size: 16px;
+}
+
+.baris {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+
+h2 {
+  font-size: 1.9rem;
+}
+
+p.sub {
+  width: 800px;
+  max-width: 100%;
+  text-align: center;
+  margin: auto;
+  margin-bottom: 40px;
+}
+
+img {
+  max-width: 100%;
+}
+
+/* Navigasi */
+
+nav {
+  background-color: rgb(13, 36, 13);
+  padding: 0 17px;
+}
+
+nav .baris {
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+nav .baris .left-nav .logo {
+  height: 50px;
+}
+
+nav .baris .right-nav {
+  display: flex;
+  align-items: center;
+}
+
+nav .baris .right-nav ul.navigasi {
+  display: flex;
+  list-style: none;
+  text-align: center;
+}
+
+nav .baris .right-nav ul.navigasi li a {
+  margin-right: 30px;
+  color: #fff;
+  text-decoration: none;
+}
+
+nav .baris .right-nav ul.navigasi li a:hover {
+  color: rgba(255, 255, 255, 0.75);
+}
+
+nav .baris .right-nav button {
+  width: 76px;
+  height: 38px;
+  background-color: transparent;
+  border: 2px solid white;
+  border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
+}
+
+/* Header */
+
+header {
+  padding: 70px;
+}
+
+header .baris {
+  display: flex;
+  align-items: center;
+}
+
+header .kiri,
+header .kanan {
+  width: 50%;
+}
+
+header .kiri h1 {
+  margin-bottom: 10px;
+}
+
+header .kiri p.tagline {
+  margin-bottom: 20px;
+  font-size: 18px;
+}
+
+header .kiri .cta p {
+  margin-bottom: 5px;
+}
+
+header .kiri .cta img {
+  width: 40px;
+  margin-right: 10px;
+}
+
+/* Best Seller */
+
+section.best-seller {
+  background-color: rgb(232, 219, 190);
+  padding: 70px 50px;
+}
+
+section.best-seller h2 {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+section.best-seller .produk img {
+  width: 100%;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+section.best-seller .produk p {
+  font-weight: bold;
+  margin-top: 10px;
+  font-size: 1.3rem;
+  /* 1.3 * 16px */
+}
+
+/* About Us */
+
+section.about-us {
+  padding: 70px 50px;
+  text-align: center;
+}
+
+section.about-us h2 {
+  margin-bottom: 10px;
+}
+
+section.about-us p.tentang {
+  width: 1024px;
+  max-width: 90%;
+  margin: 10px auto 40px auto;
+}
+
+section.about-us img {
+  width: 960px;
+  max-width: 100%;
+  border-radius: 10px;
+}
+
+section.about-us .penjelasan {
+  max-width: 80%;
+  margin: 10px auto 30px auto;
+}
+
+/* Our Team */
+
+section.our-team {
+  padding: 70px 50px;
+  background-color: rgb(232, 219, 190);
+}
+
+section.our-team h2 {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+section.our-team .baris .tim img {
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+.our-team .baris h3 {
+  font-size: 1.3rem;
+  margin-bottom: 5px;
+}
+
+/* Review */
+
+section.review {
+  background-image: url(../images/shapes/9.svg);
+  background-size: cover;
+  padding: 70px 50px;
+}
+
+section.review h2 {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+section.review .baris {
+  width: 1366px;
+  max-width: 100%;
+  margin: auto;
+  justify-content: space-evenly;
+  align-items: flex-start;
+}
+
+section.review .baris .testimoni {
+  width: 30%;
+  padding: 35px;
+  background-color: #fff;
+  border-radius: 5px;
+  border: 1px solid rgba(0, 0, 0, 0.175);
+  margin-bottom: 20px;
+}
+
+section.review .profile {
+  display: flex;
+  margin-bottom: 20px;
+  align-items: center;
+}
+
+section.review .profile img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin-right: 20px;
+  border: 5px solid rgb(227, 211, 177);
+}
+
+/* Contact Us */
+
+section.contact-us {
+  display: flex;
+  flex-direction: column;
+}
+
+section.contact-us .map {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+section.contact-us .contact {
+  margin-bottom: 20px;
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-around;
+}
+
+section.contact-us .contact .kolom {
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+section.contact-us .contact .kolom img {
+  width: 60px;
+}
+
+section.contact-us .contact .kolom a {
+  text-decoration: none;
+}
+
+/* Footer */
+
+footer {
+  background-color: #078364;
+  padding: 50px 0;
+}
+
+footer .baris {
+  display: block;
+  text-align: center;
+}
+
+footer ul.navigasi {
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  list-style: none;
+}
+
+footer ul.navigasi li a {
+  text-decoration: none;
+  margin: 0 20px;
+  color: rgba(255, 255, 255, 0.55);
+}
+
+footer ul.navigasi li a:hover {
+  color: rgba(255, 255, 255, 0.75);
+}
+
+footer p {
+  color: #fff;
+}
+
+.card {
+  width: 20%;
+  margin: 10px 20px;
+  padding-bottom: 20px;
+  text-align: center;
+  background-color: #fff;
+  border-radius: 8px;
+  transition: all 0.3s ease-in-out;
+}
+
+.card:hover {
+  cursor: pointer;
+  transform: scale(1.05);
+}
+
+/* Media screen  */
+
+/* table - 768px */
+@media (max-width: 768px) {
+  /* nav */
+  nav .baris {
+    justify-content: space-between;
+  }
+
+  header .baris {
+    flex-direction: column-reverse;
+    padding: 0;
+  }
+
+  header .kiri,
+  header .kanan {
+    width: 100%;
+  }
+
+  header .kiri .cta img {
+    width: 40px;
+  }
+
+  nav .baris .right-nav ul.navigasi {
+    display: none;
+  }
+
+  /* header */
+  header .baris .kiri h1 {
+    font-size: 1.5rem;
+  }
+
+  header .baris .kiri h1 > img {
+    width: 30px;
+  }
+
+  header .baris .kiri p {
+    font-size: 1rem;
+  }
+
+  header .baris .kiri .cta p {
+    font-size: 0.8rem;
+  }
+
+  header .baris .kiri .cta a > img {
+    width: 35px;
+  }
+
+  /* best seller */
+  section.best-seller .baris {
+    margin-top: -15px;
+    flex-direction: column;
+  }
+
+  section.best-seller .baris .produk {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  section.best-seller .baris .produk p {
+    font-size: 1rem;
+  }
+
+  /* our team */
+  section.our-team .baris {
+    margin-top: -15px;
+    flex-direction: column;
+  }
+
+  section.our-team .baris .tim {
+    width: 100%;
+  }
+
+  section.our-team .baris .tim h3 {
+    font-size: 1rem;
+  }
+
+  section.our-team .baris .tim p {
+    font-size: 0.8rem;
+  }
+
+  /* review */
+  section.review .baris {
+    margin-top: -15px;
+    flex-direction: column;
+  }
+
+  section.review .baris .testimoni {
+    width: 100%;
+  }
+
+  section.review .baris .testimoni .profile img {
+    width: 60px;
+    height: 60px;
+  }
+
+  section.review .baris .testimoni .profile .titel h3 {
+    font-size: 0.9rem;
+  }
+
+  section.review .baris .testimoni p {
+    font-size: 0.8rem;
+  }
+
+  /* contact us */
+  section.contact-us .map {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+
+  section.contact-us .contact .kolom img {
+    width: 40px;
+  }
+
+  /* footer */
+  footer {
+    padding: 30px 0;
+  }
+
+  footer .baris ul.navigasi li a {
+    font-size: 0.9rem;
+  }
+}
